@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color:#F4F4F4;
+   
 }
 
 #logo-img{
@@ -17,6 +17,7 @@
     
 }
 .head{
+     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,10 +38,10 @@
   
 
 }
-nav a{
+a{
     text-decoration:none;
     color:black;
-    font-size:20px;
+    
 }
 
 
@@ -238,3 +239,54 @@ nav a{
   border-color: #f7d411;
 }
 
+.project{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    padding: 20px 100px;
+}
+.project-done{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.project-done p{
+    max-width: 500px;
+   
+}
+.project-done h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.project-img{
+    width: 400px;
+    height:300px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+
+}
+
+.project-img:hover{
+    transform: scale(1.05);
+}
+.arrow-img{
+    width:20px;
+    height:10px;
+    margin-left: 10px;
+    
+  
+    
+}
+
+.project-discription{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.view-project a{
+    text-decoration: none;
+    color: black;
+}
