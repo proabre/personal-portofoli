@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-   
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 #logo-img{
@@ -250,6 +252,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background:linear-gradient(180deg,#b0b7f2 0%,#5d8ff4 100%);
     
 }
 .project-done p{
@@ -259,6 +262,7 @@ a{
 .project-done h1{
     font-size: 50px;
     padding-bottom: 30px;
+   
 }
 .project-img{
     width: 400px;
@@ -277,8 +281,6 @@ a{
     height:10px;
     margin-left: 10px;
     
-  
-    
 }
 
 .project-discription{
@@ -289,4 +291,469 @@ a{
 .view-project a{
     text-decoration: none;
     color: black;
+}
+
+/* ============================================
+   CONTACT SECTION STYLES
+   ============================================ */
+
+
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact-section {
+    width: 100%;
+    padding: 4rem 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* ============================================
+   TITLE
+   ============================================ */
+.contact-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+
+
+
+/* ============================================
+   FORM
+   ============================================ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: var(--bg-input);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--focus);
+    background: var(--bg);
+}
+
+/* Select Dropdown */
+.select-wrapper {
+    position: relative;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-right: 3rem;
+}
+
+.form-group select option {
+    background: var(--bg-card);
+    color: var(--text);
+}
+
+.select-arrow {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ============================================
+   SUBMIT BUTTON
+   ============================================ */
+.submit-btn {
+    width: 100%;
+    padding: 1.25rem;
+    background: var(--accent);
+    color: var(--text);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(244, 112, 74, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+
+footer{
+
+    background:#4c4cd4 ;
+    color:#fff;
+    padding:80px 8%;
+}
+
+/* Main Layout */
+
+.footer-container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:70px;
+}
+
+/* Left Section */
+
+.footer-brand{
+
+    flex:1;
+    min-width:280px;
+}
+
+.footer-brand h1{
+
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.footer-brand h1 span{
+
+    color:#9aa4b2;
+    font-weight:400;
+}
+
+.footer-brand p{
+
+    color:#95a2b8;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:380px;
+}
+
+/* Middle & Right */
+
+.footer-links,
+.footer-social{
+
+    min-width:200px;
+}
+
+.footer-links h3,
+.footer-social h3{
+
+    margin-bottom:25px;
+    letter-spacing:2px;
+    font-size:1.2rem;
+}
+
+/* Navigation */
+
+.footer-links ul,
+.footer-social ul{
+
+    list-style:none;
+}
+
+.footer-links li,
+.footer-social li{
+
+    margin:18px 0;
+}
+
+.footer-links a{
+
+    color:#9aa4b2;
+    text-decoration:none;
+    transition:.3s;
+    position:relative;
+}
+
+.footer-links a::before{
+
+    content:">";
+    margin-right:8px;
+    color:#18d3c0;
+}
+
+.footer-links a:hover{
+
+    color:#18d3c0;
+    padding-left:8px;
+}
+
+/* Social Links */
+
+.footer-social a{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#9aa4b2;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+
+    color:#18d3c0;
+    transform:translateX(5px);
+}
+
+.footer-social i{
+
+    width:25px;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+/* Divider */
+
+hr{
+
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.1);
+    margin:60px 0 25px;
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    text-align:left;
+}
+
+.footer-bottom p{
+
+    color:#7d8797;
+    font-size:.95rem;
+}
+
+.footer-bottom strong{
+
+    color:#ffffff;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section{
+    padding:80px 20px;
+    background:#f8f9fa;
+}
+
+.contact-container{
+    max-width:800px;
+    margin:auto;
+}
+
+.contact-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.contact-title-outline{
+    display:block;
+    color:#0077ff;
+}
+
+.contact-form{
+    margin-top:40px;
+    background:#fff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   ROW
+========================= */
+
+.form-row{
+    display:flex;
+    gap:20px;
+}
+
+.form-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#444;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#0077ff;
+    box-shadow:0 0 0 3px rgba(0,119,255,.15);
+}
+
+.form-group textarea{
+
+    resize:vertical;
+}
+
+/* =========================
+   SELECT
+========================= */
+
+.select-wrapper{
+
+    position:relative;
+}
+
+.select-wrapper select{
+
+    appearance:none;
+    cursor:pointer;
+}
+
+.select-arrow{
+
+    width:18px;
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    pointer-events:none;
+    color:#666;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-btn{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#0077ff;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+
+    background:#005fd4;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .form-row{
+
+        flex-direction:column;
+        gap:0;
+    }
+
+    .contact-title{
+
+        font-size:2.2rem;
+    }
+
+    .contact-form{
+
+        padding:25px;
+    }
+
 }

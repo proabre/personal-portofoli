@@ -114,8 +114,7 @@
 
     <section class="project-done">
         <h1><i>Work done so far ...</i></h1>
-        <a href="#">
-            <div class="project">
+        <div class="project">
             <img src="images/project1.jpeg" class="project-img">
             <div class="project-discription">
                 <h2>Deployment & DevOps</h2>
@@ -126,10 +125,8 @@
                 </div>
             </div>
         </div>
-        </a>
-        
-        <a href="#">
-             <div class="project">
+
+        <div class="project">
             <img src="images/project2.jpg" class="project-img">
             <div class="project-discription">
                 <h2>Deployment & DevOps</h2>
@@ -140,10 +137,8 @@
                 </div>
             </div>
         </div>
-        </a>
-       
-        <a href="#">
-            <div class="project">
+
+        <div class="project">
             <img src="images/project3.webp" class="project-img">
             <div class="project-discription">
                 <h2>Deployment & DevOps</h2>
@@ -154,10 +149,8 @@
                 </div>
             </div>
         </div>
-        </a>
-        
-        <a href="#">
-            <div class="project">
+
+        <div class="project">
             <img src="images/project4.webp" class="project-img">
             <div class="project-discription">
                 <h2>Deployment & DevOps</h2>
@@ -168,14 +161,156 @@
                 </div>
             </div>
         </div>
-        </a>
-
-        
 
 
 
     </section>
+
+ 
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h1 class="contact-title">
+                LET'S WORK
+                <span class="contact-title-outline">TOGETHER</span>
+            </h1>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your Name" 
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Your@email.com" 
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Budget</label>
+                    <div class="select-wrapper">
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Select...</option>
+                            <option value="500-1000">$500 - $1,000</option>
+                            <option value="1000-5000">$1,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000+">$10,000+</option>
+                        </select>
+                        <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Message" 
+                        rows="5" 
+                        required
+                    ></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-container">
+
+        <!-- Left Section -->
+        <div class="footer-brand">
+            <h1>
+             Abraham Mezgeb
+            </h1>
+
+            <p>
+                Creating seamless user journeys &
+                elegant interfaces
+            </p>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="footer-links">
+            <h3>EXPLORE</h3>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Right Section -->
+        <div class="footer-social">
+            <h3>CONNECT</h3>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>X</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 &bull; Designed by
+            <strong>Abraham Mezgeb</strong>. All rights reserved.
+        </p>
+    </div>
+</footer>
+
     </main>
 
 </body>
 </html>
+
